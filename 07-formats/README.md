@@ -4,13 +4,22 @@
 
 | 玩法 | 文件 | 核心差异 |
 | --- | --- | --- |
-| 6-max 现金局 | [cash-6max.md](cash-6max.md) | 主流线上赛制，位置感最关键 |
-| 满员桌现金局 | [cash-full-ring.md](cash-full-ring.md) | 9-10 人，牌力要求更严 |
-| 锦标赛 MTT | [mtt.md](mtt.md) | 盲注上升、ICM、泡沫期 |
-| 单桌赛 SNG | [sng.md](sng.md) | 前期累积、后期推推乐 |
-| 单挑 Heads-Up | [heads-up.md](heads-up.md) | 范围极宽、位置每手都换 |
+| 6-max 现金局 | [cash-6max.md](cash-6max.md) | 主流线上赛制，位置感最关键，范围最宽 |
+| 满员桌现金局 | [cash-full-ring.md](cash-full-ring.md) | 9-10 人，牌力要求更严，多人底池多 |
+| 锦标赛 MTT | [mtt.md](mtt.md) | 盲注上升、ICM、泡沫期，筹码会贬值 |
+| 单桌赛 SNG | [sng.md](sng.md) | 前期累积、后期推推乐，ICM 影响大 |
+| 单挑 Heads-Up | [heads-up.md](heads-up.md) | 范围极宽、位置定义不同、动态博弈 |
 | 短牌 Short Deck | [short-deck.md](short-deck.md) | 去掉 2-5，成牌概率大变 |
 
-## 笔记
+## 选择打哪种？
 
-<!-- 按 README 的笔记格式往下加 -->
+- **想练技术 / 手数多**：6-max 现金局
+- **想稳、波动小**：满员桌现金局
+- **想搏一把 / 学 ICM**：SNG
+- **想长期打大赛**：MTT
+- **想练对抗 / 心态**：单挑
+- **想换口味 / 翻牌就打架**：短牌
+
+## 通用原则
+
+不管哪种玩法，**筹码越深越靠技术，越浅越靠数学**。先搞清楚自己桌上的有效筹码深度，再选策略。
