@@ -2,6 +2,8 @@
 
 本库是**给 AI agent 用的知识库**，所以对格式的要求比普通文档严格：格式不一致，agent 就会读错。
 
+> **先读 [`MAINTAINING.md`](MAINTAINING.md)**——那里有仓库地图、铁律、改动配方和"为什么是这个形状"。本文件只讲**加内容时的格式**。
+
 ---
 
 ## 第一条：数值不许重复造
@@ -16,10 +18,11 @@
 改完任何数字，**必须**跑一遍校验：
 
 ```bash
-python3 scripts/verify_tables.py
+python3 scripts/verify_tables.py   # 数字用公式重算，逐格比对
+python3 scripts/check_links.py     # 内部链接是否有效
 ```
 
-这个脚本会用公式重算 `reference/` 里的每一个值并逐格比对，对不上就非零退出。CI 也会在每次提交时跑它——数字错了合不进去。
+两个脚本都会非零退出，CI 也会在每次 push / PR 时跑它们——数字错了、链接断了都合不进去。
 
 ## 改完策略内容，跑一遍测点集
 

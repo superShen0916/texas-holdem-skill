@@ -114,7 +114,7 @@
 | G3 | 频繁 3-bet | 你持 `A5s` | **加宽 4-bet 范围** | 阻断 + 反击 | `[共识]` |
 | G4 | 你过牌他就下注 | 你持强牌 | **过牌加注** | 惩罚他 | `[共识]` |
 
-> 依据见 [`05-exploits/README.md`](../05-exploits/README.md)。
+> 依据见 [`05-exploits/exploits.md`](../05-exploits/exploits.md)。
 
 ## H. 边界（应回答"不确定"）
 

@@ -1,4 +1,4 @@
-name: verify tables
+name: verify
 
 on:
   push:
@@ -15,3 +15,5 @@ jobs:
           python-version: "3.x"
       - name: 复核 reference/ 全部数字
         run: python3 scripts/verify_tables.py
+      - name: 检查内部链接
+        run: python3 scripts/check_links.py

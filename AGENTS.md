@@ -1,4 +1,15 @@
-# AGENTS.md — 知识库使用说明
+# AGENTS.md
+
+本仓库有两个 AI 角色。**进来先确认你是哪一个**：
+
+| 你是 | 去哪 |
+| --- | --- |
+| **用这个库做扑克决策** 的 agent（打牌） | 往下读——本文件就是给你的 |
+| **来维护 / 修改这个仓库** 的 agent（改库） | 先读 [`MAINTAINING.md`](MAINTAINING.md) |
+
+---
+
+## 使用说明（给"用库的 agent"）
 
 **你是来使用这个知识库的 AI agent。先读完本页，再取用具体文件。**
 
@@ -45,9 +56,9 @@
 | 转牌 / 河牌怎么打 | [`02-postflop/turn-and-river.md`](02-postflop/turn-and-river.md) | |
 | 多人底池怎么调整 | [`02-postflop/multiway.md`](02-postflop/multiway.md) | |
 | 该不该诈唬 | [`reference/pot-odds.md`](reference/pot-odds.md) | `02-postflop/` |
-| 该下多大尺度 | [`03-betting-sizing/README.md`](03-betting-sizing/README.md) | [`reference/spr.md`](reference/spr.md) |
+| 该下多大尺度 | [`03-betting-sizing/sizing.md`](03-betting-sizing/sizing.md) | [`reference/spr.md`](reference/spr.md) |
 | 这个牌面算干燥还是湿润 | [`02-postflop/board-texture.md`](02-postflop/board-texture.md) | |
-| 对手是什么类型、怎么针对 | [`05-exploits/README.md`](05-exploits/README.md) | |
+| 对手是什么类型、怎么针对 | [`05-exploits/exploits.md`](05-exploits/exploits.md) | |
 | 锦标赛 / 泡沫期 / ICM | [`07-formats/mtt.md`](07-formats/mtt.md) | |
 | 资金管理 / 心态（**给人看，不是给你用的**） | [`human/mental-bankroll.md`](human/mental-bankroll.md) | |
 | 某个名词不懂 | [`GLOSSARY.md`](GLOSSARY.md) | |
@@ -92,9 +103,8 @@
 
 **覆盖：**
 - 翻前范围与行动线、翻后牌面判断与下注、下注尺度与底池几何
-- 数学：赔率、权益、组合数、MDF、EV、SPR（全部在 `reference/`）
+- 数学：赔率、权益、组合数、MDF、EV、SPR、ICM（全部在 `reference/`）
 - 对手类型识别与针对性打法
-- 心态、资金管理、复盘方法
 - 六种玩法：6-max 现金、满员现金、MTT、SNG、单挑、短牌
 
 **不覆盖（不要假装知道）：**

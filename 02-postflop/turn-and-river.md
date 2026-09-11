@@ -72,6 +72,6 @@
 
 ## 六、本文件未覆盖
 
-- 精确的多条街下注尺度规划 → 见 [`03-betting-sizing/README.md`](../03-betting-sizing/README.md) 与 [`reference/spr.md`](../reference/spr.md)
+- 精确的多条街下注尺度规划 → 见 [`03-betting-sizing/sizing.md`](../03-betting-sizing/sizing.md) 与 [`reference/spr.md`](../reference/spr.md)
 - 河牌精确的诈唬频率（需求解器）
 - 极深筹码的转牌/河牌线

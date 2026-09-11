@@ -31,11 +31,12 @@ LLM agent 有两个硬毛病，本库专门绕开：
 ## 结构
 
 ```
-AGENTS.md            ★ agent 入口：铁律、路由表、规则格式
+AGENTS.md            ★ agent 入口：角色路由、铁律、路由表、规则格式
 DECISION.md          ★ 决策流程：从牌局处境到动作的完整四步
 README.md              本文件（面向人）
 GLOSSARY.md            术语表 + 范围记号规范 ★ 读其他文件前建议先看
-CONTRIBUTING.md        规则格式与贡献规范
+MAINTAINING.md         维护/交接指南：仓库地图、铁律、改动配方、设计理由
+CONTRIBUTING.md        加内容时的格式规范
 
 reference/           ★ 预计算表，全库唯一数字来源
 ├── pot-odds.md          底池赔率、弃牌权益
@@ -53,7 +54,7 @@ reference/           ★ 预计算表，全库唯一数字来源
 07-formats/          六种玩法：6-max / 满员 / MTT / SNG / 单挑 / 短牌
 
 tests/spots.md       ★ 测点集：固定局面 + 标准动作，用来给 agent 打分
-scripts/             数字校验（CI 会跑）
+scripts/             校验脚本：数字重算 + 链接检查（CI 会跑）
 
 human/               面向人的内容，agent 做决策时用不到
 ├── mental-bankroll.md   心态与资金管理
@@ -87,9 +88,12 @@ human/               面向人的内容，agent 做决策时用不到
 
 ---
 
-## 贡献
+## 贡献 / 接手
 
-欢迎补充和修正。加规则前请先读 [`CONTRIBUTING.md`](CONTRIBUTING.md)（规定了规则表格式与置信度标记）。所有数值请放进 [`reference/`](reference/)，不要在模块里重复造数。
+- 加内容前读 [`CONTRIBUTING.md`](CONTRIBUTING.md)（规则表格式与置信度标记）
+- **要接手维护这个仓库**，先读 [`MAINTAINING.md`](MAINTAINING.md)——仓库地图、铁律、改动配方、以及"为什么是这个形状"（避免好心改坏）
+- 所有数值放进 [`reference/`](reference/)，不要在模块里重复造数
+- 提交前跑 `scripts/verify_tables.py` 和 `scripts/check_links.py`
 
 ## License
 

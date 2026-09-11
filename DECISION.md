@@ -59,7 +59,7 @@
 ③ 查动作 → [02-postflop/cbet-and-barrels.md](02-postflop/cbet-and-barrels.md)
    结合 ① 的牌面 + ② 的档位 → 下注 / 过牌
 
-④ 定尺度 → [03-betting-sizing/README.md](03-betting-sizing/README.md)
+④ 定尺度 → [03-betting-sizing/sizing.md](03-betting-sizing/sizing.md)
    要用多大把筹码打进去 → [reference/spr.md](reference/spr.md)
 ```
 
@@ -97,10 +97,10 @@
    
 ⑤ 剥削调整：对手从不诈唬 → 可以弃得比 MDF 多；
              对手诈唬过多 → 守得比 MDF 宽
-   → [05-exploits/README.md](05-exploits/README.md)
+   → [05-exploits/exploits.md](05-exploits/exploits.md)
 ```
 
-**要加注时**：算加注尺度 → [`03-betting-sizing/README.md`](03-betting-sizing/README.md) 第四节。
+**要加注时**：算加注尺度 → [`03-betting-sizing/sizing.md`](03-betting-sizing/sizing.md) 第四节。
 
 **到转牌 / 河牌**：不是简单重复翻牌——重新判断这张牌帮了谁，见 [`02-postflop/turn-and-river.md`](02-postflop/turn-and-river.md)。
 
