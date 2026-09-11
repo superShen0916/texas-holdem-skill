@@ -20,6 +20,7 @@
 | 面对下注该防守多少比例 | [`reference/mdf.md`](reference/mdf.md) |
 | 诈唬需要对手弃牌多少比例 | [`reference/pot-odds.md`](reference/pot-odds.md) |
 | 某个听牌的胜率 | [`reference/equity.md`](reference/equity.md) |
+| 锦标赛跟注值不值（ICM） | [`reference/icm.md`](reference/icm.md) |
 | 对手范围里有多少种组合 | [`reference/combinatorics.md`](reference/combinatorics.md) |
 | 该下多大 / 能不能打光 | [`reference/spr.md`](reference/spr.md) |
 
@@ -40,13 +41,15 @@
 | 翻前被人加注 / 被 3-bet | [`01-preflop/facing-raise.md`](01-preflop/facing-raise.md) | |
 | 盲注要不要防守 | [`01-preflop/facing-raise.md`](01-preflop/facing-raise.md) | |
 | 翻牌该不该下注 | [`02-postflop/cbet-and-barrels.md`](02-postflop/cbet-and-barrels.md) | [`02-postflop/board-texture.md`](02-postflop/board-texture.md) |
-| 面对下注，跟还是弃 | [`reference/pot-odds.md`](reference/pot-odds.md) | [`reference/equity.md`](reference/equity.md) |
+| 对手下注了，跟还是弃 | [`02-postflop/facing-bets.md`](02-postflop/facing-bets.md) | [`reference/pot-odds.md`](reference/pot-odds.md) |
+| 转牌 / 河牌怎么打 | [`02-postflop/turn-and-river.md`](02-postflop/turn-and-river.md) | |
+| 多人底池怎么调整 | [`02-postflop/multiway.md`](02-postflop/multiway.md) | |
 | 该不该诈唬 | [`reference/pot-odds.md`](reference/pot-odds.md) | `02-postflop/` |
 | 该下多大尺度 | [`03-betting-sizing/README.md`](03-betting-sizing/README.md) | [`reference/spr.md`](reference/spr.md) |
 | 这个牌面算干燥还是湿润 | [`02-postflop/board-texture.md`](02-postflop/board-texture.md) | |
 | 对手是什么类型、怎么针对 | [`05-exploits/README.md`](05-exploits/README.md) | |
 | 锦标赛 / 泡沫期 / ICM | [`07-formats/mtt.md`](07-formats/mtt.md) | |
-| 资金管理 / 心态 / 上头 | [`06-mental-bankroll/README.md`](06-mental-bankroll/README.md) | |
+| 资金管理 / 心态（**给人看，不是给你用的**） | [`human/mental-bankroll.md`](human/mental-bankroll.md) | |
 | 某个名词不懂 | [`GLOSSARY.md`](GLOSSARY.md) | |
 | 某个玩法的特殊规则 | [`07-formats/`](07-formats/) | |
 
@@ -127,7 +130,9 @@ reference/           ← 预计算表。唯一数字来源
 03-betting-sizing/   ← 下注尺度
 04-math-odds/        ← 数学原理（数值在 reference/）
 05-exploits/         ← 读人与剥削
-06-mental-bankroll/  ← 心态与资金
 07-formats/          ← 六种玩法
-08-tools/            ← 工具
+tests/spots.md       ← 测点集（给 agent 打分用）
+human/               ← 心态 / 资金 / 工具，**面向人，做决策时用不到**
 ```
+
+> `human/` 里的内容不是给你做决策用的——那是给牌手本人看的。**不要**把里面的"别上头"之类建议当成打牌规则。

@@ -42,16 +42,22 @@ reference/           ★ 预计算表，全库唯一数字来源
 ├── mdf.md               MDF / Alpha
 ├── equity.md            听牌胜率、翻前对局
 ├── combinatorics.md     组合数、阻断牌
-└── spr.md               SPR、底池几何
+├── spr.md               SPR、底池几何
+└── icm.md               锦标赛 ICM（含完整算例）
 
 01-preflop/          翻前：范围、面对加注
-02-postflop/         翻后：牌面判断、持续下注
+02-postflop/         翻后：牌面判断、持续下注、面对下注、转河、多人
 03-betting-sizing/   下注尺度
 04-math-odds/        数学原理（数值见 reference/）
 05-exploits/         读人与剥削
-06-mental-bankroll/  心态与资金管理
 07-formats/          六种玩法：6-max / 满员 / MTT / SNG / 单挑 / 短牌
-08-tools/            工具
+
+tests/spots.md       ★ 测点集：固定局面 + 标准动作，用来给 agent 打分
+scripts/             数字校验（CI 会跑）
+
+human/               面向人的内容，agent 做决策时用不到
+├── mental-bankroll.md   心态与资金管理
+└── tools.md             工具
 ```
 
 ---

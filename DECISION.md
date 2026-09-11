@@ -80,6 +80,8 @@
 
 ## 第 3 步：面对对手的下注
 
+完整分支见 [`02-postflop/facing-bets.md`](02-postflop/facing-bets.md)。骨架：
+
 ```
 ① 算所需胜率 → 查 [reference/pot-odds.md](reference/pot-odds.md)
    （看对手下注占底池多少）
@@ -99,6 +101,10 @@
 ```
 
 **要加注时**：算加注尺度 → [`03-betting-sizing/README.md`](03-betting-sizing/README.md) 第四节。
+
+**到转牌 / 河牌**：不是简单重复翻牌——重新判断这张牌帮了谁，见 [`02-postflop/turn-and-river.md`](02-postflop/turn-and-river.md)。
+
+**多人底池（≥3 人）**：整体收紧，牌力重估，见 [`02-postflop/multiway.md`](02-postflop/multiway.md)。
 
 ---
 

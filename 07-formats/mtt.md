@@ -41,6 +41,8 @@
 
 > **跟注要严于 MDF**（[`reference/mdf.md`](../reference/mdf.md)），因为 ICM 让输筹码的代价高于赢筹码的收益。`[共识]`
 
+**ICM 的具体数值与算例**见 [`reference/icm.md`](../reference/icm.md)——那里有一个"chip EV 为零的翻硬币，ICM 下是 −$EV"的完整计算。
+
 ## 卫星赛（Satellite）
 
 | 原则 | 置信度 |

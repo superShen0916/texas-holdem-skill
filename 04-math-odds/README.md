@@ -14,6 +14,7 @@
 | 权益 | 当前胜率 | [`reference/equity.md`](../reference/equity.md) |
 | 组合数 | 某范围有多少种牌 | [`reference/combinatorics.md`](../reference/combinatorics.md) |
 | SPR | 筹码 ÷ 底池 | [`reference/spr.md`](../reference/spr.md) |
+| ICM | 锦标赛筹码的边际价值递减 | [`reference/icm.md`](../reference/icm.md) |
 
 ---
 
@@ -53,6 +54,8 @@ MDF = `底池 ÷ (底池 + 下注)`。对手下得越小，MDF 越高（要求�
 
 **推论**：不要为了轻微的 +chip EV 去冒被淘汰的风险。`[共识]`
 **应用**：泡沫期、决赛桌的跟注范围要收缩。详见 [`07-formats/mtt.md`](../07-formats/mtt.md)。
+
+**数值与算例**：[`reference/icm.md`](../reference/icm.md)（含 Malmuth-Harville 模型的一个完整算例：chip EV 为零的翻硬币跟注，在 ICM 下是负 $EV）。
 
 ---
 

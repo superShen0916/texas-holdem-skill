@@ -118,6 +118,42 @@ GEOM = [
 for label, streets, claimed in GEOM:
     check(label, claimed, spr_to_allin(streets), tol=0.06)
 
+# ------------------------------------------------------------------- ICM
+print("\n== reference/icm.md :: ICM (Malmuth-Harville 模型) ==")
+from itertools import permutations
+
+
+def icm_ev(chips, payouts):
+    """返回每个玩家的 $EV。按筹码比例枚举所有名次排列。"""
+    n = len(chips)
+    total = sum(chips)
+    evs = [0.0] * n
+    for order in permutations(range(n)):
+        p, rem = 1.0, total
+        for i in order:
+            p *= chips[i] / rem
+            rem -= chips[i]
+        for pos, i in enumerate(order):
+            evs[i] += p * payouts[pos]
+    return evs
+
+
+base = icm_ev([5000, 5000, 2000], [100, 50, 0])
+check("你(5000) 的 $EV", 60.71, base[0], tol=0.01)
+check("小筹码(2000) 的 $EV", 28.57, base[2], tol=0.01)
+check("你 筹码占比", 41.67, 100 * 5000 / 12000, tol=0.01)
+check("你 $EV 占比（小于筹码占比）", 40.48, 100 * base[0] / 150, tol=0.01)
+check("小筹码 $EV 占比（大于筹码占比）", 19.05, 100 * base[2] / 150, tol=0.01)
+
+win = icm_ev([7000, 5000], [100, 50])[0]
+lose = icm_ev([3000, 5000, 4000], [100, 50, 0])[0]
+calling = 0.5 * win + 0.5 * lose
+check("跟注并赢 的 $EV", 79.17, win, tol=0.01)
+check("跟注并输 的 $EV", 40.18, lose, tol=0.01)
+check("弃牌 的 $EV", 60.71, base[0], tol=0.01)
+check("跟注期望 $EV", 59.67, calling, tol=0.01)
+check("跟注相对弃牌 的损失", -1.04, calling - base[0], tol=0.01)
+
 # ------------------------------------------------------------------ 汇总
 print()
 if FAIL:
