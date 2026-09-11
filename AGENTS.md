@@ -4,6 +4,8 @@
 
 本库是关于德州扑克策略的结构化知识库。它不为人类阅读体验优化，而为**你的正确使用**优化。下面三条铁律决定了你能不能用对。
 
+> **要出一个具体的打法决策时**：直接走 [`DECISION.md`](DECISION.md)——那是从牌局处境到动作的完整四步流程。本页讲的是"怎么正确使用这个库"，`DECISION.md` 讲的是"怎么走完一次决策"。
+
 ---
 
 ## 铁律一：不要心算，去查表
@@ -33,6 +35,7 @@
 
 | 用户的处境的 | 先读 | 需要时再读 |
 | --- | --- | --- |
+| **要出一个打法决策** | [`DECISION.md`](DECISION.md) | 按流程走到底 |
 | 翻前要不要入池 | [`01-preflop/ranges.md`](01-preflop/ranges.md) | |
 | 翻前被人加注 / 被 3-bet | [`01-preflop/facing-raise.md`](01-preflop/facing-raise.md) | |
 | 盲注要不要防守 | [`01-preflop/facing-raise.md`](01-preflop/facing-raise.md) | |
@@ -115,6 +118,7 @@
 
 ```
 AGENTS.md            ← 本文件，agent 入口
+DECISION.md          ← ★ 决策流程：处境 → 动作的完整四步
 README.md            ← 面向人的项目说明
 GLOSSARY.md          ← 术语与范围记号定义（读任何模块前建议先扫一眼）
 reference/           ← 预计算表。唯一数字来源

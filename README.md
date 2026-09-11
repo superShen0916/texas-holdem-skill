@@ -32,6 +32,7 @@ LLM agent 有两个硬毛病，本库专门绕开：
 
 ```
 AGENTS.md            ★ agent 入口：铁律、路由表、规则格式
+DECISION.md          ★ 决策流程：从牌局处境到动作的完整四步
 README.md              本文件（面向人）
 GLOSSARY.md            术语表 + 范围记号规范 ★ 读其他文件前建议先看
 CONTRIBUTING.md        规则格式与贡献规范
